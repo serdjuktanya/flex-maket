@@ -1,0 +1,379 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+
+body{
+ padding: 0px;
+ margin: 0px;	
+ max-width: auto;
+ font-family:calibri;
+ font-size: 12px;	
+}
+
+a{
+ cursor: pointer;
+}
+                  /* Шапка сайта*/
+header{
+ padding:0px;
+ margin: 0px;	
+}
+
+.wrap{
+ min-height: 50px;
+ background-color: #0075bf;	
+ color: white;
+}
+
+.wrap ul{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content:center;
+ align-items:center;
+ margin: 0px;
+ padding: 0px;
+ list-style: none;	
+}
+
+.wrap ul li{
+ margin-right: 65px;	
+}
+
+.wrap ul li a{
+ text-decoration: none;
+ color:white;
+ transition: 0.3s;
+}
+
+.wrap img{
+ padding-right: 5px;
+}
+
+.contacts{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content:center;
+ align-items:center;
+}
+.contacts ul{
+ margin-top: 10px;
+}
+
+.leng{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content:center;
+ align-items:center;
+ margin-left: 215px;
+ margin-top: 8px;	
+}
+
+.leng1, .leng2, .leng3 {
+ height: 30px;
+ width: 30px;
+ border:1px solid white;
+ line-height: 30px;
+ text-align: center;
+ margin-left: 5px;
+ transition: 0.5s;	
+}
+
+.leng a{
+ text-decoration: none;
+ color: white;
+}
+
+.leng1:hover{
+ background-color: #ffde00;	
+}
+
+.leng2:hover{
+ background-color: #ffde00;	
+}
+
+.leng3:hover{
+ background-color: #ffde00;	
+}
+
+p{
+ color: #2f5075	;
+}
+
+h2{
+ color: #ffcc33;
+ text-align: center;
+ padding: 30px;
+ font-family:calibri;
+ font-size: 20px;
+ margin: 0px;
+}
+
+h1{
+ text-align: center;
+ line-height: 120px;
+ color: #0075bf;
+ font-family:calibri;
+ font-size:30px;
+ margin: 0px;
+}
+                           /* Логотип*/
+.logo{
+ min-height: 120px;
+ background-color: #f1f1f1;	
+}
+                           /*Меню*/
+nav ul{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content:center;
+ align-items:center;
+ margin: 0px;	
+}
+
+nav ul li{
+ list-style: none;
+ padding: 0px 70px 0px 70px;	
+ border-left: 1px solid #e5e5e5;
+ border-right: 1px solid #e5e5e5;
+ min-height: 50px;
+}
+
+nav ul  li a{
+ text-decoration: none;
+ font-size: 16px;
+ color: #1b497e;
+ line-height: 50px;
+}
+
+nav ul li:hover{
+ border-bottom: 5px solid #ffde00;	
+}
+main{
+ background-color:#f5f5f5;
+ margin: 0px;   
+}
+                           /*Наша продукция*/
+.product1{
+ min-height: 70px;
+ background-color:#f5f5f5;	
+}                          
+
+                          /* слайдер большой*/
+.wrap-slick{
+ margin: 0px;
+}
+
+.slick-dots {
+ display: flex;
+ justify-content: center;
+ bottom: 50px !important; 
+}
+
+.sl-slide>img {
+ width: 100%;
+ height: auto; 
+}
+
+.slick-dots li[class="slick-active"] button{
+ background-color: white;
+ border-radius: 50%;
+}
+                         /* слайдер маленький*/
+.wrap2-slick{
+ max-width: 100%;
+}
+.my-slide2{
+ max-width: 80%;
+ margin: 0 auto;
+}
+
+.sl-slide-item>img{
+ border-radius:0px 0px 5px 5px;
+}
+
+.sl-slide-item{
+ position: relative;
+}
+
+.slick-slide .lup{
+ display: none;
+ }
+
+.sl-slide-item:hover .lup {
+ display: block;
+ position: absolute;
+ bottom: 1%;
+ left: 1%;
+ z-index: 3;
+ background-color: #ace5f3;
+ opacity: .4; 
+}
+
+.lup{
+ width: 228px;
+ height: 222px;
+}
+
+button.slick-next.slick-arrow:before {
+ content: '\f105';
+ font-family:'fontawesome' ;
+ position: absolute;
+ color: #589ff1;
+ font-size: 50px;
+ bottom: 1px; 
+}
+
+button.slick-prev.slick-arrow:before{
+ content: '\f104';
+ font-family:'fontawesome' ;
+ position: absolute;
+ color: #589ff1;
+ font-size: 50px;
+ bottom: 1px; 
+ right: 30px;
+}
+                    /*пустой блок*/
+.product2{
+ min-height: 40px;
+}
+                       /* НАШИ ПАРТНЕРЫ*/
+.partners{
+ min-height: 215px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: stretch;
+ align-content:;
+}
+
+.partner{
+ border: 1px solid #e9e9e9;
+ width: 250px;	
+ text-align: center;
+ margin-bottom: 45px;
+}
+
+.partner img{
+ margin-top: 30px
+}
+                           /*Подвал*/
+footer{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content:space-around;
+ align-items:center;
+ background-image: url(img/footer1.jpg);
+ background-color:#65afc4;
+ color: white;
+ min-height: 75px;	
+ font-size: 21px;
+}
+
+footer img{
+ margin-right: 10px;
+}
+
+.form4{
+ text-decoration: underline;
+}
+                        /*  РЕСПОНСИВ*/
+@media  (max-width: 700px){
+    header nav ul{
+     flex-direction: column;
+     flex-grow: 2;
+    }
+    .wrap ul{
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    }
+    .contacts{
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    line-height: 3; 
+    }
+  
+    nav ul li{
+      border:1px dashed #f1f1f1;
+      width: 100%;  
+    }
+
+     nav ul li:first-child{
+    	border-top: none;
+    }
+
+    nav ul li:last-child{
+    	border-bottom: none;
+    }
+   ul.slick-dots {
+    top: 46px;
+    }
+
+    .leng {
+     justify-content: flex-end; 
+     align-items: flex-end;  
+    }
+    footer{
+    flex-direction: column;	
+     font-size: 15px; 
+     line-height: 3;  
+     justify-content:flex-start;
+     align-items:flex-start;
+    }
+}
+  
+
+@media  (max-width: 350px){
+	.leng{
+    display: none;
+    }
+
+}
